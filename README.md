@@ -3,6 +3,7 @@ How to run:
 ```python backtest.py```
 
 Note:
+
 ``This python script is configured to read a predefined CSV file from the data directory.
 There are three CSV files to choose from:
 snp500_1800s.csv
