@@ -4,7 +4,7 @@ Backtest Given Investment Strategy per century:
 
 Note:
 
-```This python script is configured to read a predefined CSV file from the data directory.
+``` This python script is configured to read a predefined CSV file from the data directory.
 There are three CSV files to choose from:
 snp500_1800s.csv
 snp500_2000s.csv
@@ -18,3 +18,6 @@ Print out monthly price data per century:
 
 ```python print.py```
 
+Note:
+``` This operation will print SNP500 monthly price action data on a per century basis.
+```
