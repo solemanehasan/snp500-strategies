@@ -15,3 +15,9 @@ Print out monthly price data per century:
 
 Note:
 * This operation will print SNP500 monthly price action data on a per century basis.
+
+
+Other strategies:
+* 10am strategy: ```backtest_10ma_strat.py```
+* Convention DCA: ```dca_stretegy.py```
+
