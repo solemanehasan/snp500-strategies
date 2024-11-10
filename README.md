@@ -1,4 +1,4 @@
-How to run:
+Backtest Given Investment Strategy per century:
 
 ```python backtest.py```
 
@@ -13,4 +13,8 @@ Each CSV file contains monthly price data for the snp500 index.
 To change which CSV data file is used, simply update the python script in the beginning
 ```
 
+
+Print out monthly price data per century:
+
+```python print.py```
 
