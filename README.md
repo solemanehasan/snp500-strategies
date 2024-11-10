@@ -18,6 +18,13 @@ Note:
 
 
 Other strategies:
-* 10am strategy: ```backtest_10ma_strat.py```
+* 10ma strategy: ```backtest_10ma_strat.py```
 * Convention DCA: ```dca_stretegy.py```
 
+
+Recommendations:
+* Experiment around by running all 4 of these scripts.
+* The average annual rate of return for the snp500 from 1871 to 2024 is around 4% which falls in line with the conventional DCA strategy
+* Understand how the 10ma (backtest_10ma_strat.py) and the momentum (backtest.py) strategy differ from the DCA strategy
+* Run backtests on the following timeframes: 150 years, century, decade, 5 year, and yearly
+* Remember to run sanity checks of eye-ball the results to make sure everything seems kosher
