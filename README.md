@@ -14,4 +14,4 @@ Print out monthly price data per century:
 ```python print.py```
 
 Note:
-This operation will print SNP500 monthly price action data on a per century basis.
+* This operation will print SNP500 monthly price action data on a per century basis.
