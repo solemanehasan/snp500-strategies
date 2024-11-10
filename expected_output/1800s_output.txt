@@ -1,0 +1,378 @@
+
+Strategy Description:
+This strategy combines momentum with mean reversion on the S&P 500 index:
+1. Buy if the price is above the 21-month simple moving average (SMA) - Absolute Momentum.
+2. Buy if there is positive acceleration in 6-month returns (recent returns are better than previous returns) - Relative Momentum.
+3. Buy if the price is more than 5% below the 21-month SMA, assuming a reversion to the mean - Mean Reversion.
+4. Sell when the price drops below the 21-month SMA.
+
+The goal is to maximize returns by capturing momentum trends while also taking advantage of mean-reversion opportunities.
+
+Starting backtest...
+1871-01-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 4.44
+1871-02-01: Holding position. Current price: 4.50
+1871-03-01: Holding position. Current price: 4.61
+1871-04-01: Holding position. Current price: 4.74
+1871-05-01: Holding position. Current price: 4.86
+1871-06-01: Holding position. Current price: 4.82
+1871-07-01: Holding position. Current price: 4.73
+1871-08-01: Holding position. Current price: 4.79
+1871-09-01: Holding position. Current price: 4.84
+1871-10-01: Holding position. Current price: 4.59
+1871-11-01: Holding position. Current price: 4.64
+1871-12-01: Holding position. Current price: 4.74
+1872-01-01: Holding position. Current price: 4.86
+1872-02-01: Holding position. Current price: 4.88
+1872-03-01: Holding position. Current price: 5.04
+1872-04-01: Holding position. Current price: 5.18
+1872-05-01: Holding position. Current price: 5.18
+1872-06-01: Holding position. Current price: 5.13
+1872-07-01: Holding position. Current price: 5.10
+1872-08-01: Holding position. Current price: 5.04
+1872-09-01: Holding position. Current price: 4.95
+1872-10-01: Holding position. Current price: 4.97
+1872-11-01: Holding position. Current price: 4.95
+1872-12-01: Holding position. Current price: 5.07
+1873-01-01: Holding position. Current price: 5.11
+1873-02-01: Holding position. Current price: 5.15
+1873-03-01: Holding position. Current price: 5.11
+1873-04-01: Holding position. Current price: 5.04
+1873-05-01: Holding position. Current price: 5.05
+1873-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.98
+1873-07-01: No position. Current price: 4.97
+1873-08-01: No position. Current price: 4.97
+1873-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.59
+1873-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.19
+1873-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.04
+1873-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.42
+1874-01-01: No position. Current price: 4.66
+1874-02-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.80
+1874-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.73
+1874-04-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.60
+1874-05-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.48
+1874-06-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.46
+1874-07-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.46
+1874-08-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.47
+1874-09-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.54
+1874-10-01: No position. Current price: 4.53
+1874-11-01: No position. Current price: 4.57
+1874-12-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.54
+1875-01-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.54
+1875-02-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.53
+1875-03-01: Holding position. Current price: 4.59
+1875-04-01: Holding position. Current price: 4.65
+1875-05-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.47
+1875-06-01: No position. Current price: 4.38
+1875-07-01: No position. Current price: 4.39
+1875-08-01: No position. Current price: 4.41
+1875-09-01: No position. Current price: 4.37
+1875-10-01: No position. Current price: 4.30
+1875-11-01: No position. Current price: 4.37
+1875-12-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.37
+1876-01-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.46
+1876-02-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 4.52
+1876-03-01: Holding position. Current price: 4.51
+1876-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.34
+1876-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.18
+1876-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.15
+1876-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.10
+1876-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.93
+1876-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.69
+1876-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.67
+1876-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.60
+1876-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.58
+1877-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.55
+1877-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.34
+1877-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.17
+1877-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 2.94
+1877-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 2.94
+1877-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 2.73
+1877-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 2.85
+1877-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.05
+1877-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.24
+1877-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.31
+1877-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.26
+1877-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.25
+1878-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.25
+1878-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 3.18
+1878-03-01: No position. Current price: 3.24
+1878-04-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 3.33
+1878-05-01: Holding position. Current price: 3.34
+1878-06-01: Holding position. Current price: 3.41
+1878-07-01: Holding position. Current price: 3.48
+1878-08-01: Holding position. Current price: 3.45
+1878-09-01: Holding position. Current price: 3.52
+1878-10-01: Holding position. Current price: 3.48
+1878-11-01: Holding position. Current price: 3.47
+1878-12-01: Holding position. Current price: 3.45
+1879-01-01: Holding position. Current price: 3.58
+1879-02-01: Holding position. Current price: 3.71
+1879-03-01: Holding position. Current price: 3.65
+1879-04-01: Holding position. Current price: 3.77
+1879-05-01: Holding position. Current price: 3.94
+1879-06-01: Holding position. Current price: 3.96
+1879-07-01: Holding position. Current price: 4.04
+1879-08-01: Holding position. Current price: 4.07
+1879-09-01: Holding position. Current price: 4.22
+1879-10-01: Holding position. Current price: 4.68
+1879-11-01: Holding position. Current price: 4.93
+1879-12-01: Holding position. Current price: 4.92
+1880-01-01: Holding position. Current price: 5.11
+1880-02-01: Holding position. Current price: 5.20
+1880-03-01: Holding position. Current price: 5.30
+1880-04-01: Holding position. Current price: 5.18
+1880-05-01: Holding position. Current price: 4.77
+1880-06-01: Holding position. Current price: 4.79
+1880-07-01: Holding position. Current price: 5.01
+1880-08-01: Holding position. Current price: 5.19
+1880-09-01: Holding position. Current price: 5.18
+1880-10-01: Holding position. Current price: 5.33
+1880-11-01: Holding position. Current price: 5.61
+1880-12-01: Holding position. Current price: 5.84
+1881-01-01: Holding position. Current price: 6.19
+1881-02-01: Holding position. Current price: 6.17
+1881-03-01: Holding position. Current price: 6.24
+1881-04-01: Holding position. Current price: 6.22
+1881-05-01: Holding position. Current price: 6.50
+1881-06-01: Holding position. Current price: 6.58
+1881-07-01: Holding position. Current price: 6.35
+1881-08-01: Holding position. Current price: 6.20
+1881-09-01: Holding position. Current price: 6.25
+1881-10-01: Holding position. Current price: 6.15
+1881-11-01: Holding position. Current price: 6.19
+1881-12-01: Holding position. Current price: 6.01
+1882-01-01: Holding position. Current price: 5.92
+1882-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.79
+1882-03-01: No position. Current price: 5.78
+1882-04-01: No position. Current price: 5.78
+1882-05-01: No position. Current price: 5.71
+1882-06-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.68
+1882-07-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 6.00
+1882-08-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 6.18
+1882-09-01: Holding position. Current price: 6.24
+1882-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 6.07
+1882-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.81
+1882-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.84
+1883-01-01: No position. Current price: 5.81
+1883-02-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.68
+1883-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.75
+1883-04-01: No position. Current price: 5.87
+1883-05-01: No position. Current price: 5.77
+1883-06-01: No position. Current price: 5.82
+1883-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.73
+1883-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.47
+1883-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.53
+1883-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.38
+1883-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.46
+1883-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.34
+1884-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.18
+1884-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.32
+1884-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.30
+1884-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.06
+1884-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.65
+1884-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.46
+1884-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.46
+1884-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.74
+1884-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.59
+1884-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.44
+1884-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.35
+1884-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.34
+1885-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.24
+1885-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.37
+1885-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.38
+1885-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.37
+1885-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.32
+1885-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.30
+1885-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.46
+1885-08-01: Holding position. Current price: 4.71
+1885-09-01: Holding position. Current price: 4.65
+1885-10-01: Holding position. Current price: 4.92
+1885-11-01: Holding position. Current price: 5.24
+1885-12-01: Holding position. Current price: 5.20
+1886-01-01: Holding position. Current price: 5.20
+1886-02-01: Holding position. Current price: 5.30
+1886-03-01: Holding position. Current price: 5.19
+1886-04-01: Holding position. Current price: 5.12
+1886-05-01: Holding position. Current price: 5.02
+1886-06-01: Holding position. Current price: 5.25
+1886-07-01: Holding position. Current price: 5.33
+1886-08-01: Holding position. Current price: 5.37
+1886-09-01: Holding position. Current price: 5.51
+1886-10-01: Holding position. Current price: 5.65
+1886-11-01: Holding position. Current price: 5.79
+1886-12-01: Holding position. Current price: 5.64
+1887-01-01: Holding position. Current price: 5.58
+1887-02-01: Holding position. Current price: 5.54
+1887-03-01: Holding position. Current price: 5.67
+1887-04-01: Holding position. Current price: 5.80
+1887-05-01: Holding position. Current price: 5.90
+1887-06-01: Holding position. Current price: 5.73
+1887-07-01: Holding position. Current price: 5.59
+1887-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.45
+1887-09-01: No position. Current price: 5.38
+1887-10-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.20
+1887-11-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.30
+1887-12-01: No position. Current price: 5.27
+1888-01-01: No position. Current price: 5.31
+1888-02-01: No position. Current price: 5.28
+1888-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.08
+1888-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.10
+1888-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.17
+1888-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.01
+1888-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.14
+1888-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.25
+1888-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.38
+1888-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.35
+1888-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.24
+1888-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.14
+1889-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.24
+1889-02-01: Holding position. Current price: 5.30
+1889-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.19
+1889-04-01: No position. Current price: 5.18
+1889-05-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 5.32
+1889-06-01: Holding position. Current price: 5.41
+1889-07-01: Holding position. Current price: 5.30
+1889-08-01: Holding position. Current price: 5.37
+1889-09-01: Holding position. Current price: 5.50
+1889-10-01: Holding position. Current price: 5.40
+1889-11-01: Holding position. Current price: 5.35
+1889-12-01: Holding position. Current price: 5.32
+1890-01-01: Holding position. Current price: 5.38
+1890-02-01: Holding position. Current price: 5.32
+1890-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.28
+1890-04-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 5.39
+1890-05-01: Holding position. Current price: 5.62
+1890-06-01: Holding position. Current price: 5.58
+1890-07-01: Holding position. Current price: 5.54
+1890-08-01: Holding position. Current price: 5.41
+1890-09-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.32
+1890-10-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 5.08
+1890-11-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.71
+1890-12-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.60
+1891-01-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.84
+1891-02-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.90
+1891-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.81
+1891-04-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.97
+1891-05-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.95
+1891-06-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.85
+1891-07-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.77
+1891-08-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.93
+1891-09-01: Holding position. Current price: 5.33
+1891-10-01: Holding position. Current price: 5.33
+1891-11-01: Holding position. Current price: 5.25
+1891-12-01: Holding position. Current price: 5.41
+1892-01-01: Holding position. Current price: 5.51
+1892-02-01: Holding position. Current price: 5.52
+1892-03-01: Holding position. Current price: 5.58
+1892-04-01: Holding position. Current price: 5.57
+1892-05-01: Holding position. Current price: 5.57
+1892-06-01: Holding position. Current price: 5.54
+1892-07-01: Holding position. Current price: 5.54
+1892-08-01: Holding position. Current price: 5.62
+1892-09-01: Holding position. Current price: 5.48
+1892-10-01: Holding position. Current price: 5.59
+1892-11-01: Holding position. Current price: 5.57
+1892-12-01: Holding position. Current price: 5.51
+1893-01-01: Holding position. Current price: 5.61
+1893-02-01: Holding position. Current price: 5.51
+1893-03-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 5.31
+1893-04-01: No position. Current price: 5.31
+1893-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.84
+1893-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.61
+1893-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.18
+1893-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.08
+1893-09-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.37
+1893-10-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.50
+1893-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.57
+1893-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.41
+1894-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.32
+1894-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.38
+1894-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.51
+1894-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.57
+1894-05-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.40
+1894-06-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.34
+1894-07-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.25
+1894-08-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.41
+1894-09-01: No position. Current price: 4.48
+1894-10-01: No position. Current price: 4.34
+1894-11-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.34
+1894-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.30
+1895-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.25
+1895-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.19
+1895-03-01: No position. Current price: 4.19
+1895-04-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 4.37
+1895-05-01: Holding position. Current price: 4.61
+1895-06-01: Holding position. Current price: 4.70
+1895-07-01: Holding position. Current price: 4.72
+1895-08-01: Holding position. Current price: 4.79
+1895-09-01: Holding position. Current price: 4.82
+1895-10-01: Holding position. Current price: 4.75
+1895-11-01: Holding position. Current price: 4.59
+1895-12-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.32
+1896-01-01: No position. Current price: 4.27
+1896-02-01: No position. Current price: 4.45
+1896-03-01: No position. Current price: 4.38
+1896-04-01: No position. Current price: 4.42
+1896-05-01: No position. Current price: 4.40
+1896-06-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.32
+1896-07-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.04
+1896-08-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 3.81
+1896-09-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.01
+1896-10-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.10
+1896-11-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.38
+1896-12-01: No position. Current price: 4.22
+1897-01-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.22
+1897-02-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.18
+1897-03-01: BUY signal triggered - Price below 21-month SMA (Sell Signal). Entry price: 4.19
+1897-04-01: SELL signal triggered - Price below 21-month SMA (Sell Signal). Exit price: 4.06
+1897-05-01: No position. Current price: 4.08
+1897-06-01: BUY signal triggered - Price above 21-month SMA (Absolute Momentum). Entry price: 4.27
+1897-07-01: Holding position. Current price: 4.46
+1897-08-01: Holding position. Current price: 4.75
+1897-09-01: Holding position. Current price: 4.98
+1897-10-01: Holding position. Current price: 4.82
+1897-11-01: Holding position. Current price: 4.65
+1897-12-01: Holding position. Current price: 4.75
+1898-01-01: Holding position. Current price: 4.88
+1898-02-01: Holding position. Current price: 4.87
+1898-03-01: Holding position. Current price: 4.65
+1898-04-01: Holding position. Current price: 4.57
+1898-05-01: Holding position. Current price: 4.87
+1898-06-01: Holding position. Current price: 5.06
+1898-07-01: Holding position. Current price: 5.08
+1898-08-01: Holding position. Current price: 5.27
+1898-09-01: Holding position. Current price: 5.26
+1898-10-01: Holding position. Current price: 5.15
+1898-11-01: Holding position. Current price: 5.32
+1898-12-01: Holding position. Current price: 5.65
+1899-01-01: Holding position. Current price: 6.08
+1899-02-01: Holding position. Current price: 6.31
+1899-03-01: Holding position. Current price: 6.40
+1899-04-01: Holding position. Current price: 6.48
+1899-05-01: Holding position. Current price: 6.21
+1899-06-01: Holding position. Current price: 6.07
+1899-07-01: Holding position. Current price: 6.28
+1899-08-01: Holding position. Current price: 6.44
+1899-09-01: Holding position. Current price: 6.37
+1899-10-01: Holding position. Current price: 6.34
+1899-11-01: Holding position. Current price: 6.46
+
+Performance Summary:
+  Start Date: 1871-01-01
+  End Date: 1899-11-01
+
+Buy and Hold Performance:
+  Entry Price: $4.44
+  Exit Price: $6.46
+  Starting Portfolio Value: $1.00
+  Ending Portfolio Value: $1.45
+  Total Buy and Hold Return: 45.50%
+
+Strategy Performance:
+  Starting Portfolio Value: $1.00
+  Ending Portfolio Value (Strategy): $7.48
+  Total Strategy Return: 648.40%
+
+Drawdown Summary:
+  Strategy Maximum Drawdown: -26.93%
+  Buy and Hold Maximum Drawdown: -47.30%
