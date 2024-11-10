@@ -28,3 +28,4 @@ Recommendations:
 * Understand how the 10ma (backtest_10ma_strat.py) and the momentum (backtest.py) strategy differ from the DCA strategy
 * Run backtests on the following timeframes: 150 years, century, decade, 5 year, and yearly
 * Remember to run sanity checks of eye-ball the results to make sure everything seems kosher
+* Outside of strategies such as mean reversion, try experimenting with momentum, breakout, trend following, arbritrage, volatility, and seasonality trading.
